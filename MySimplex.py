@@ -83,13 +83,13 @@ def pivot(M):
                 
                 return p
                 print("pivot est :"+str(p))   
-def calcul_elements(M):#a'=a-b*c/pivot
+def calcul_elements(M):#a'=a-b*c/pivot cette fct calcul des les éléments du tab en utilisant la methode du rectangle (voir cours)
     for i in range(1,n+m+1):
         for j in range(m+1):
             M[i,j]=M[i,j]- (M[indice_sortante][j]*M[i][indice_entrante])/pivot(M)
 
             return M
-#def switch coeff 
+#def coeff(): Cette fct sera mettre la nouvelle coeff du variable entrante
 
 
 
@@ -107,6 +107,8 @@ def main():
             calcul_ratio(M)
             for i in range(1,m+1):
                 M2[i-1][n+m+3]=colonne_ratio(M)
+              #ici manque de mettre a jour la case coeff
+   
                 
                 
             

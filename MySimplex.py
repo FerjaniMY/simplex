@@ -7,17 +7,17 @@ Created on Thu Apr 11 19:37:40 2019
 
 import numpy as np
 # n,m sont les nbres resp des VHB et VB
- try:
-   n=int(input("Donner le nombre de VHB x : \n"))
-   assert n>0
-except AssertionError:
-    print("L'entier saisie est inférieure ou égale à 0.")
+try:
+ n=int(input("Donner le nombre de VHB x : \n"))
+ assert n>0
+ except AssertionError:
+  print("L'entier saisie est inférieure ou égale à 0.")
   
 
- try:
-   m=int(input("Donner le nombre des VB e :  \n"))
+try:
+ m=int(input("Donner le nombre des VB e :  \n"))
 except AssertionError:
-    print("L'entier saisie est inférieure ou égale à 0.")
+ print("L'entier saisie est inférieure ou égale à 0.")
 
 M=np.zeros((m+1,n+m+3))
  #Le tableau initial quand va l'optimiser

@@ -31,7 +31,7 @@ def Remplissage_mat(M):
                 print("Veuiller saisir un entier")
                 M[i,j]=float(input("Donner l'élément M["+str(i)+"]["+str(j)+"] = "))
                 print(M)
-                return M
+    return M
 def V_entrante(M):
     max_c=0
     #Détermination du cj le plus grand 

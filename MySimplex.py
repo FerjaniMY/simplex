@@ -104,14 +104,14 @@ def nv_coeff(M):
       M[indice_sortante(M),0]= M[m+1,indice_entrante(M)]
    # on peut ajouter ici return
 def optimize(M):
-    Remplissage_mat(M)
-     while #?????? #Condition d'arret lorsque le tab est optimisé 
-   #on va remplir ici tout les cases du tab 
-     M=calcul_elements(M)          
-     M[m+1,n+m+3]=calcul_Z(M)
-     M[indice_sortante(M),0]= M[m+1,indice_entrante(M)] #remplace nv_coeff
+     Remplissage_mat(M)
+     for x in M[m+1][1:n+m+1] :
+       condition=x > 0
+     while condition is True:
+         M=calcul_elements(M)  
+         M[m+1,n+m+3]=calcul_Z(M)
+         M[indice_sortante(M),0]= M[m+1,indice_entrante(M)] #remplace nv_coeff
      
-
 
 
 

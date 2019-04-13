@@ -4,10 +4,22 @@ Created on Thu Apr 11 19:37:40 2019
 
 @author: hp
 """
-#enfiiiiiiin 
+
 import numpy as np
-n=int(input("Donner le nombre de VHB x : \n"))
-m=int(input("Donner le nombre des VB e :  \n"))
+# n,m sont les nbres resp des VHB et VB
+n=-1
+while n<=0:
+ try:
+   n=int(input("Donner le nombre de VHB x : \n"))
+ except:
+  print("donner un entier strictement posetif \n ")
+  
+m=-2
+while m<=0:
+ try:
+   m=int(input("Donner le nombre des VB e :  \n"))
+ except:
+  print("donner un entier strictement posetif \n ")
 
 M=np.zeros((m+1,n+m+3))
  #Le tableau initial quand va l'optimiser

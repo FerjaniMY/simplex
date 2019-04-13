@@ -115,32 +115,10 @@ def optimize(M):
              M[i-1][n+m+3]=colonne_ratio(M)
      
 
+      print(M)
+      return M
 
 
-
-#def main():
-    
-  #  Remplissage_mat(M)
- #   M2=np.zeros_like(M)
-#    for i in range(1,n+m+1):
-#        while(M[m+1][i]>0):#arret lorsque le tab est optimiser
-             #on va remplir tout le tab
-  #          M2=calcul_elements(M)
-   #         M2[m+1,n+m+3]=calcul_Z(M)
-    #        calcul_ratio(M)
-     #       for i in range(1,m+1):
-      #          M2[i-1][n+m+3]=colonne_ratio(M)
-              #ici manque de mettre a jour la case coeff
-   
-                
-                
-            
-    
-    
-  #print(" le tab optimisé est": M2)
-  
-#if __name__== "__main__":
- # main()
     
         
         

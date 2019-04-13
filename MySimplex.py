@@ -4,7 +4,7 @@ Created on Thu Apr 11 19:37:40 2019
 
 @author: hp
 """
-
+#enfiiiiiiin 
 import numpy as np
 n=int(input("Donner le nombre de VHB x : \n"))
 m=int(input("Donner le nombre des VB e :  \n"))

@@ -105,8 +105,8 @@ def nv_coeff(M):
    # on peut ajouter ici return
 def optimize(M):
      Remplissage_mat(M)
-     for x in M[m+1][1:n+m+1] :
-       condition=x > 0
+     for x in M[m][1:n+m+1] :#parcours du ligne des cj
+       condition=x > 0  #la condition d'optimisation
      while condition is True:
          M=calcul_elements(M)  
          M[m+1,n+m+3]=calcul_Z(M)

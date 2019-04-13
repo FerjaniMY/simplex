@@ -99,13 +99,16 @@ def calcul_elements(M):#a'=a-b*c/pivot cette fct calcul des les éléments du ta
             M[i,j]=M[i,j]- (M[indice_sortante][j]*M[i][indice_entrante])/pivot(M)
 
             return M
-#def coeff(): Cette fct sera mettre la nouvelle coeff du variable entrante
+def nv_coeff(M):
+    
+      M[indice_sortante(M),0]= M[m+1,indice_entrante(M)]
+   # on peut ajouter ici return
 
 
 
 
 
-def main():
+#def main():
     
   #  Remplissage_mat(M)
  #   M2=np.zeros_like(M)
@@ -126,8 +129,8 @@ def main():
     
   #print(" le tab optimisé est": M2)
   
-if __name__== "__main__":
-  main()
+#if __name__== "__main__":
+ # main()
     
         
         

@@ -111,6 +111,8 @@ def optimize(M):
          M=calcul_elements(M)  
          M[m+1,n+m+3]=calcul_Z(M)
          M[indice_sortante(M),0]= M[m+1,indice_entrante(M)] #remplace nv_coeff
+          for i in range(1,m+1):
+             M[i-1][n+m+3]=colonne_ratio(M)
      
 
 

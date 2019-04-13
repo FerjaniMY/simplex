@@ -25,7 +25,7 @@ def Remplissage_mat(M):
     for i in range (m+1):
         for j in range (n+m+3):
             try:
-                M[i,j]=int(input("Donner l'élément M["+str(i)+"]["+str(j)+"] = ")) #Je peut specifier de plus je peut ajouter des  string pour spécifier de plus comme coef,Valeur,..
+                M[i,j]=float(input("Donner l'élément M["+str(i)+"]["+str(j)+"] = ")) #Je peut specifier de plus je peut ajouter des  string pour spécifier de plus comme coef,Valeur,..
                 print(M)
             except:  
                 print("Veuiller saisir un entier")

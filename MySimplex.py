@@ -10,13 +10,13 @@ import numpy as np
 try:
  n=int(input("Donner le nombre de VHB x : \n"))
  assert n>0
- except AssertionError:
+except AssertionError:
   print("L'entier saisie est inférieure ou égale à 0.")
   
 
 try:
  m=int(input("Donner le nombre des VB e :  \n"))
-except AssertionError:
+ except AssertionError:
  print("L'entier saisie est inférieure ou égale à 0.")
 
 M=np.zeros((m+1,n+m+3))

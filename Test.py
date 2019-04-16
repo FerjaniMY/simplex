@@ -82,12 +82,15 @@ def pivot(M):
     return p
       
 def calcul_elements(M):#a'=a-b*c/pivot
-    M2=np.zeros_like(M)
-    for i in range(1,n+m):
-        for j in range(m):
-            M2[i][j]=M[i][j]- (M[indice_sortante(M)][j]*M[i][indice_entrante(M)])/pivot(M)
+    
 
-    return M2
+    for i in range(m+1):
+        for j in range(1,n+m+1):
+            try:
+                M[i][j]=M[i][j]- (M[2][j]* M[i][2])/pivot(M)
+            except ZeroDivisionError:
+                print("Erreur division par 0")
+    return M      
 def nv_coeff(M):
     
       M[indice_sortante(M)][0]= M[m+1][indice_entrante(M)]
